@@ -1,5 +1,5 @@
 === Twitter posts to Blog ===
-Contributors: badbreze,sforsberg
+Contributors: badbreze,sforsberg, nathansmonk
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QV5Y8ZNVWGEA8
 Tags: twitter, autopost
 Tested up to: 3.6
@@ -15,7 +15,7 @@ Good work with this plugin.
 = With this plugin you can stream tweets to your blog, it's simply to use =
 * Go to the plugin settings menu "Twitter To WP" under "Dashboard"
 * Configure the plugin options eg.:
-* Capabilities: here you can select who can change settings of this plugin 
+* Capabilities: here you can select who can change settings of this plugin
 * Cron time: choose how much time must pass before load new items, use "never" to disable
 * Publish status: Choose how the plugin create articles: published or draft
 * Posts Tags: Type tags you want append to each tweet (dont use query strings here)
@@ -85,12 +85,12 @@ Follow the description in order to configure the plugin
 
 = I don't understand the utility of this plugin. Can you explain me what's mean? =
 
-This plugin periodicaly pick tweets from tag,username or some text like this: 
+This plugin periodicaly pick tweets from tag,username or some text like this:
 https://twitter.com/search?q=%40iWafer&src=typd and for each tweet create one post in your blog.
 
 = Where do I select the category,tags,content it will post to? =
 
-In plugin settings page there is a tab called "Post customization" where you can choose those 
+In plugin settings page there is a tab called "Post customization" where you can choose those
 and more options for each tweet post this plugin publish
 
 = Can i exclude tweets with unwanted words/authors? =
@@ -99,7 +99,7 @@ Yes you can exclude authors or words from the main configuration tab of the plug
 
 = How work the title/body formatting =
 
-Formatting is easy to use, you can choose what you want to see in every post you publish, for egsample, you can set as title something 
+Formatting is easy to use, you can choose what you want to see in every post you publish, for egsample, you can set as title something
 like this:
 
 `Tweet from %author%`
@@ -141,9 +141,9 @@ Or you can exclude replies with the same filters but with a - in front of it
 `-filter:mentions
 -filter:replies`
 
-= Why my site doesn't grab images from twitter? = 
-In some cases hosters have security setting in their configuration or firewalls or some other think like these, 
-if you have problems with images in tweets the main problem maybe is the "allow_url_fopen" PHP setting, 
+= Why my site doesn't grab images from twitter? =
+In some cases hosters have security setting in their configuration or firewalls or some other think like these,
+if you have problems with images in tweets the main problem maybe is the "allow_url_fopen" PHP setting,
 normaly you can request the activation of this function to enable the grabbing of images
 
 = Can i intercept some actions on the plugin runtime? =
@@ -153,14 +153,14 @@ Here the list of actions with a small description
 This action runs before the insertion of the image (from twitter) in the post
 
 `dg_tw_images_placed`
-This action runs after the insertion of the image (from twitter) in the post (runs only if you choosed to insert the 
+This action runs after the insertion of the image (from twitter) in the post (runs only if you choosed to insert the
 image as preview or as content
 
 `dg_tw_after_post_published`
 This action runs after the insertion of the post, the only parameter gived is the id of the post
 
 = Can i customize posts without edit the plugin? =
-Yes you can, usin filter you can edit some parts of the plugin engine without edit it, keeping the ability to 
+Yes you can, usin filter you can edit some parts of the plugin engine without edit it, keeping the ability to
 update the plugin without lost any costomization made by you. Filters are listed here.
 
 `dg_tw_before_post_tweet`
@@ -173,7 +173,7 @@ Filter the author name
 Filter the html link to the author page on twitter
 
 = Can i the id/author/avatar or query string of certain post in my template? =
-All posts made by this plugin are created with some metas for those who want cusutomize their theme for tweets, 
+All posts made by this plugin are created with some metas for those who want cusutomize their theme for tweets,
 here the collected post metas:
 
 `dg_tw_query`
@@ -254,7 +254,7 @@ The avatar url of the author
 
 = 1.3.* =
 * Fix duplicates when you post multiple tweets in single post
-* Cleared up various warning messages when indexes were missing 
+* Cleared up various warning messages when indexes were missing
 * Fix the main loop take only the first query string
 * Fix post meta with query string
 * Check all fields in admin page
